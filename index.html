@@ -1,122 +1,455 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>OneSec-Tech | Cyber Security</title>
+  <title>OneSec-Tech | Cyber Security</title>
 
-<link rel="stylesheet" href="style.css">
+<meta name="description"
+ content="Cyber Security Enthusiast | Bug Hunter | Vulnerability Assessment | Red Team Learner">
 
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="bg-[#0a0a0f] text-white">
 
-<div class="particles"></div>
+  <!-- PARTICLES -->
 
-<header>
+<canvas id="particles"></canvas>
 
-<h1>OneSec-Tech</h1>
+  <!-- NAVBAR -->
 
-<p>Cyber Security • Bug Hunter • Red Team Learner</p>
+  <nav
+    class="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-black/30 border-b border-white/5">
 
-<a href="#about" class="btn">Explore</a>
+```
+<div class="max-w-7xl mx-auto px-6">
 
-</header>
+  <div class="flex justify-between items-center h-16">
 
-<section id="about">
+    <a href="#"
+      class="text-xl font-bold text-green-500 glow">
+      OneSec-Tech
+    </a>
 
-<h2>About Me</h2>
+    <div class="hidden md:flex gap-8">
 
-<div class="card">
+      <a href="#about"
+        class="nav-link relative text-gray-400 hover:text-white">
+        About
+      </a>
 
-<ul>
-<li>🔐 Cyber Security Enthusiast</li>
-<li>🐧 Kali Linux User</li>
-<li>⚔️ Learning Red Team Techniques</li>
-<li>🛡️ Vulnerability Assessment</li>
-<li>🐞 Bug Hunter</li>
-</ul>
+      <a href="#skills"
+        class="nav-link relative text-gray-400 hover:text-white">
+        Skills
+      </a>
+
+      <a href="#projects"
+        class="nav-link relative text-gray-400 hover:text-white">
+        Projects
+      </a>
+
+      <a href="#certificates"
+        class="nav-link relative text-gray-400 hover:text-white">
+        Certificates
+      </a>
+
+      <a href="#contact"
+        class="nav-link relative text-gray-400 hover:text-white">
+        Contact
+      </a>
+
+    </div>
+
+    <button id="burgerBtn" class="burger md:hidden">
+
+      <span></span>
+      <span></span>
+      <span></span>
+
+    </button>
+
+  </div>
+
+  <div id="mobileMenu"
+    class="mobile-menu flex-col pb-5 gap-4 md:hidden">
+
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#contact">Contact</a>
+
+  </div>
+
+</div>
+```
+
+  </nav>
+
+  <!-- HERO -->
+
+  <section
+    class="min-h-screen flex items-center justify-center relative">
+
+```
+<div class="max-w-7xl mx-auto px-6">
+
+  <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+    <div data-reveal="left">
+
+      <span
+        class="text-green-500 font-medium uppercase tracking-widest">
+        Cyber Security Enthusiast
+      </span>
+
+      <h1
+        class="text-5xl md:text-7xl font-bold mt-5 glow leading-tight">
+
+        OneSec-Tech
+
+      </h1>
+
+      <p
+        class="text-gray-400 mt-8 text-lg max-w-xl leading-relaxed">
+
+        Focused on Web Security, Vulnerability Assessment,
+        Bug Hunting, and Learning Red Team Techniques.
+
+      </p>
+
+      <div class="flex gap-4 mt-10">
+
+        <a href="#projects"
+          class="px-6 py-3 rounded-lg bg-green-500 text-black font-semibold">
+          View Projects
+        </a>
+
+        <a href="#contact"
+          class="px-6 py-3 rounded-lg border border-green-500 text-green-500">
+          Contact Me
+        </a>
+
+      </div>
+
+    </div>
+
+    <div
+      class="flex justify-center"
+      data-reveal="right">
+
+      <div class="photo-ring">
+
+        <img
+          src="img/profile.png"
+          alt="OneSec-Tech"
+          class="rounded-full object-cover w-full h-full">
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+```
+
+  </section>
+
+  <!-- ABOUT -->
+
+  <section
+    id="about"
+    class="py-24">
+
+```
+<div class="max-w-6xl mx-auto px-6">
+
+  <h2
+    class="text-4xl font-bold text-green-500 mb-10"
+    data-reveal="bottom">
+
+    About Me
+
+  </h2>
+
+  <div
+    class="card p-8 rounded-xl"
+    data-reveal="bottom">
+
+    <ul class="space-y-4 text-gray-300">
+
+      <li>🔐 Cyber Security Enthusiast</li>
+      <li>🐧 Kali Linux User</li>
+      <li>⚔️ Learning Red Team Techniques</li>
+      <li>🛡️ Vulnerability Assessment</li>
+      <li>🐞 Bug Hunter</li>
+
+    </ul>
+
+  </div>
+
+</div>
+```
+
+  </section>
+
+  <!-- SKILLS -->
+
+  <section
+    id="skills"
+    class="py-24">
+
+```
+<div class="max-w-6xl mx-auto px-6">
+
+  <h2
+    class="text-4xl font-bold text-green-500 mb-10"
+    data-reveal="bottom">
+
+    Tech Stack
+
+  </h2>
+
+  <div
+    class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+    <div class="card p-6 rounded-xl">
+      <h3 class="mb-4 font-bold">Operating Systems</h3>
+
+      <div class="flex flex-wrap gap-2">
+
+        <span class="skill-tag">Kali Linux</span>
+        <span class="skill-tag">Windows</span>
+
+      </div>
+    </div>
+
+    <div class="card p-6 rounded-xl">
+      <h3 class="mb-4 font-bold">Programming</h3>
+
+      <div class="flex flex-wrap gap-2">
+
+        <span class="skill-tag">PHP</span>
+        <span class="skill-tag">JavaScript</span>
+
+      </div>
+    </div>
+
+    <div class="card p-6 rounded-xl">
+      <h3 class="mb-4 font-bold">Framework</h3>
+
+      <div class="flex flex-wrap gap-2">
+
+        <span class="skill-tag">Bootstrap</span>
+        <span class="skill-tag">CodeIgniter 3</span>
+
+      </div>
+    </div>
+
+    <div class="card p-6 rounded-xl">
+      <h3 class="mb-4 font-bold">Dev Tools</h3>
+
+      <div class="flex flex-wrap gap-2">
+
+        <span class="skill-tag">VS Code</span>
+        <span class="skill-tag">MySQL</span>
+        <span class="skill-tag">Laragon</span>
+        <span class="skill-tag">XAMPP</span>
+
+      </div>
+    </div>
+
+  </div>
+
+</div>
+```
+
+  </section>
+
+  <!-- CYBER TOOLS -->
+
+  <section
+    id="tools"
+    class="py-24">
+
+```
+<div class="max-w-6xl mx-auto px-6">
+
+  <h2
+    class="text-4xl font-bold text-green-500 mb-10">
+
+    Cyber Security Tools
+
+  </h2>
+
+  <div class="flex flex-wrap gap-3">
+
+    <span class="skill-tag">Burp Suite</span>
+    <span class="skill-tag">SQLMap</span>
+    <span class="skill-tag">Nmap</span>
+    <span class="skill-tag">Gobuster</span>
+    <span class="skill-tag">Dirbuster</span>
+    <span class="skill-tag">Dirsearch</span>
+    <span class="skill-tag">WhatWeb</span>
+    <span class="skill-tag">Xray</span>
+    <span class="skill-tag">Acunetix</span>
+    <span class="skill-tag">John The Ripper</span>
+    <span class="skill-tag">PwnXSS</span>
+
+  </div>
+
+</div>
+```
+
+  </section>
+
+  <!-- PROJECTS -->
+
+  <section
+    id="projects"
+    class="py-24">
+
+```
+<div class="max-w-6xl mx-auto px-6">
+
+  <h2
+    class="text-4xl font-bold text-green-500 mb-10">
+
+    Projects
+
+  </h2>
+
+  <div
+    id="repos"
+    class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+  </div>
+
+</div>
+```
+
+  </section>
+
+  <!-- CERTIFICATES -->
+
+  <section
+    id="certificates"
+    class="py-24">
+
+```
+<div class="max-w-6xl mx-auto px-6">
+
+  <h2
+    class="text-4xl font-bold text-green-500 mb-10">
+
+    Certificates
+
+  </h2>
+
+  <div
+    id="certGrid"
+    class="grid grid-cols-2 lg:grid-cols-3 gap-5">
+
+  </div>
+
+</div>
+```
+
+  </section>
+
+  <!-- CONTACT -->
+
+  <section
+    id="contact"
+    class="py-24">
+
+```
+<div class="max-w-6xl mx-auto px-6 text-center">
+
+  <h2
+    class="text-4xl font-bold text-green-500 mb-10">
+
+    Contact
+
+  </h2>
+
+  <div
+    class="flex justify-center gap-5">
+
+    <a href="https://github.com/OneSec-Tech"
+      class="social-link">
+      <i class="fab fa-github"></i>
+    </a>
+
+  </div>
+
+</div>
+```
+
+  </section>
+
+  <!-- LIGHTBOX -->
+
+  <div
+    id="lightbox"
+    class="fixed inset-0 bg-black/90 z-[999] opacity-0 pointer-events-none">
+
+```
+<div
+  class="absolute inset-0 flex items-center justify-center">
+
+  <img
+    id="lbImg"
+    class="max-w-[90%] max-h-[80vh] rounded-lg">
 
 </div>
 
-</section>
+<button id="lbClose"
+  class="absolute top-5 right-6 text-4xl">
+  ×
+</button>
 
-<section>
+<button id="lbPrev"
+  class="absolute left-6 top-1/2 text-4xl">
+  ❮
+</button>
 
-<h2>Tech Stack</h2>
+<button id="lbNext"
+  class="absolute right-6 top-1/2 text-4xl">
+  ❯
+</button>
 
-<div class="grid">
-
-<div class="card">
-<h3>Operating Systems</h3>
-<p>Kali Linux</p>
-<p>Windows</p>
+<div
+  id="lbCaption"
+  class="absolute bottom-10 left-1/2 -translate-x-1/2">
 </div>
 
-<div class="card">
-<h3>Programming</h3>
-<p>PHP</p>
-<p>JavaScript</p>
+<div
+  id="lbCounter"
+  class="absolute top-5 left-6">
 </div>
+```
 
-<div class="card">
-<h3>Framework</h3>
-<p>Bootstrap</p>
-<p>CodeIgniter 3</p>
-</div>
+  </div>
 
-<div class="card">
-<h3>Dev Tools</h3>
-<p>VS Code</p>
-<p>MySQL</p>
-<p>XAMPP</p>
-<p>Laragon</p>
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-<h2>Cyber Security Tools</h2>
-
-<div class="tools">
-
-<span>Burp Suite</span>
-<span>SQLMap</span>
-<span>Nmap</span>
-<span>Gobuster</span>
-<span>Dirsearch</span>
-<span>WhatWeb</span>
-<span>Xray</span>
-<span>Acunetix</span>
-<span>John The Ripper</span>
-<span>PwnXSS</span>
-
-</div>
-
-</section>
-
-<section>
-
-<h2>Projects</h2>
-
-<div id="repos"></div>
-
-</section>
-
-<footer>
-
-<p>© OneSec-Tech</p>
-
-</footer>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 
 </body>
+
 </html>
