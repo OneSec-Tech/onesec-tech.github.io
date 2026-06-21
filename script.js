@@ -304,38 +304,19 @@ document.addEventListener("DOMContentLoaded", () => {
   ========================================== */
 
   const certificates = [
-
-    {
-      img: "img/sertifikat1.png",
-      title: "Certificate 1"
-    },
-
-    {
-      img: "img/sertifikat2.png",
-      title: "Certificate 2"
-    },
-
-    {
-      img: "img/sertifikat3.png",
-      title: "Certificate 3"
-    },
-
-    {
-      img: "img/sertifikat4.png",
-      title: "Certificate 4"
-    },
-
-    {
-      img: "img/sertifikat5.png",
-      title: "Certificate 5"
-    },
-
-    {
-      img: "img/sertifikat6.png",
-      title: "Certificate 6"
-    }
-
-  ];
+  { img: 'img/1.png', title: 'Certificate 1' },
+  { img: 'img/2.png', title: 'Certificate 2' },
+  { img: 'img/3.png', title: 'Certificate 3' },
+  { img: 'img/4.png', title: 'Certificate 4' },
+  { img: 'img/5.png', title: 'Certificate 5' },
+  { img: 'img/6.png', title: 'Certificate 6' },
+  { img: 'img/7.png', title: 'Certificate 7' },
+  { img: 'img/8.png', title: 'Certificate 8' },
+  { img: 'img/9.png', title: 'Certificate 9' },
+  { img: 'img/10.png', title: 'Certificate 10' },
+  { img: 'img/11.png', title: 'Certificate 11' },
+  { img: 'img/12.png', title: 'Certificate 12' }
+];
 
   const certGrid =
     document.getElementById("certGrid");
