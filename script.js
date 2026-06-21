@@ -304,17 +304,17 @@ document.addEventListener("DOMContentLoaded", () => {
   ========================================== */
 
   const certificates = [
-  { img: 'image/1.png', title: 'Certificate 1' },
-  { img: 'image/2.png', title: 'Certificate 2' },
-  { img: 'image/3.png', title: 'Certificate 3' },
-  { img: 'image/4.png', title: 'Certificate 4' },
-  { img: 'image/5.png', title: 'Certificate 5' },
-  { img: 'image/6.png', title: 'Certificate 6' },
-  { img: 'image/7.png', title: 'Certificate 7' },
-  { img: 'image/8.png', title: 'Certificate 8' },
-  { img: 'image/9.png', title: 'Certificate 9' },
-  { img: 'image/10.png', title: 'Certificate 10' },
-  { img: 'image/11.png', title: 'Certificate 11' }
+  { img: 'https://onesec-tech.github.io/image/1.png', title: 'Certificate 1' },
+  { img: 'https://onesec-tech.github.io/image/2.png', title: 'Certificate 2' },
+  { img: 'https://onesec-tech.github.io/image/3.png', title: 'Certificate 3' },
+  { img: 'https://onesec-tech.github.io/image/4.png', title: 'Certificate 4' },
+  { img: 'https://onesec-tech.github.io/image/5.png', title: 'Certificate 5' },
+  { img: 'https://onesec-tech.github.io/image/6.png', title: 'Certificate 6' },
+  { img: 'https://onesec-tech.github.io/image/7.png', title: 'Certificate 7' },
+  { img: 'https://onesec-tech.github.io/image/8.png', title: 'Certificate 8' },
+  { img: 'https://onesec-tech.github.io/image/9.png', title: 'Certificate 9' },
+  { img: 'https://onesec-tech.github.io/image/10.png', title: 'Certificate 10' },
+  { img: 'https://onesec-tech.github.io/image/11.png', title: 'Certificate 11' }
 ];
 
   const certGrid =
