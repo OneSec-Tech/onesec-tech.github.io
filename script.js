@@ -314,8 +314,7 @@ document.addEventListener("DOMContentLoaded", () => {
   { img: 'image/8.png', title: 'Certificate 8' },
   { img: 'image/9.png', title: 'Certificate 9' },
   { img: 'image/10.png', title: 'Certificate 10' },
-  { img: 'image/11.png', title: 'Certificate 11' },
-  { img: 'image/12.png', title: 'Certificate 12' }
+  { img: 'image/11.png', title: 'Certificate 11' }
 ];
 
   const certGrid =
